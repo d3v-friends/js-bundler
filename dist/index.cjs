@@ -1,0 +1,1 @@
+"use strict";var t=require("child_process"),[n,o,e]=process.argv;console.log(JSON.stringify((0,t.spawnSync)("tsc",["-p",o,"--inlineSourceMap","true",n]).stdout));console.log(JSON.stringify((0,t.spawnSync)("dts-bundle-generator",["--external-inlines","true","--sort","true","--no-banner","true","--out-file",e,"--project",o,n]).stdout));

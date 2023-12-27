@@ -1,0 +1,1 @@
+import{spawnSync as t}from"child_process";var[n,o,e]=process.argv;console.log(JSON.stringify(t("tsc",["-p",o,"--inlineSourceMap","true",n]).stdout));console.log(JSON.stringify(t("dts-bundle-generator",["--external-inlines","true","--sort","true","--no-banner","true","--out-file",e,"--project",o,n]).stdout));
